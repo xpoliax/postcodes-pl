@@ -1,0 +1,290 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html.body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input.button.textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+html,
+body{
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wrapper {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-width: 100%;
+    display: table;
+	height: 100%;
+}
+.header {
+    background-color: rgba(238, 238, 238, 0.767);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    box-shadow: 5px 10px 20px 2px rgba(0, 0, 255, 0.2);
+}
+.title{
+    margin: 0px 0px 0px 6%;
+    display: flex;
+    align-items: center;
+}
+.title__img{
+    height: 30px;
+}
+.header__title {
+    padding: 0px 0px 0px 10px;
+    font-size: 2.5em;
+    font-style: italic;
+}
+@media screen and (max-width: 600px) {
+    .header__title {
+    font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header__title {
+    font-size: 1.2em;
+    }
+    .title__img {
+        height: 20px;
+    }
+}
+.header__img {
+    padding: 0px 10% 0px 0px;
+    height: 25px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 10px 15px;
+}
+.home__img{
+    padding: 0px 6px 0px 0px;
+    height: 1.5625em;
+}
+.input{
+    margin: 0px 5% 0px 20%;
+    display: flex;
+}
+.search{
+    display: flex;
+    width: 700px;
+    height: 40px;
+    text-align: center;
+    border: 3px solid rgb(185, 132, 25);
+    box-shadow: 2px 6px 20px 2px rgba(0, 0, 255, 0.2);
+}
+@media screen and (max-width: 910px){
+    .input{
+        margin: 0px 5% 0px 13%;
+    }
+    .search{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .search{
+        width: 53%;
+    }
+    .input{
+        margin: 0px 2% 0px 10%;
+    }
+}
+.submit{
+    display: flex;
+    margin: 0px 0px 0px 10px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10%;
+    background-color: rgb(211, 183, 128);
+}
+
+.warszawaindex{
+    margin: 2.5em;
+}
+.warszawaindex__title{
+    padding: 0.8em;
+    background-color: rgba(228, 227, 223, 0.527);
+}
+.title1{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0px 10px 0px 2em;
+}
+.title2{
+    display: inline-block;
+    font-size: 1.5em;
+    /* font-style: italic; */
+    color: rgb(211, 183, 128);
+}
+.warszawaindex2{
+    background-color: rgba(228, 227, 223, 0.527);
+    margin: 0px auto;
+    height: 20%;
+    margin: 2.5em;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.warszawaindex__city{
+    display: flex;
+    color: rgb(185, 132, 25);
+    font-size: 2em;
+    padding: 3.5% 0px 0px 2em;
+    font-weight: 900;
+}
+.warszawaindex__ind{
+    padding: 1.2% 8em 0px 0px;
+}
+.warszawaindex__ind-p{
+    font-size: 1.2em;
+}
+.warszawaindex__ind-p2{
+    font-size: 2em; 
+    color: rgb(185, 132, 25);
+}
+@media screen and (max-width: 750px){
+    .title2{
+        display: block;
+        padding: 0px 0px 0px 2em;
+    }
+    .warszawaindex__ind{
+        padding: 3% 5em 0px 0px;
+    }
+    .warszawaindex__city{
+        padding: 3% 0px 0px 1em;
+    }
+    .warszawaindex__ind-p{
+        font-size: 1em;
+    }
+    .warszawaindex__ind-p2{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 460px){
+    .warszawaindex__city{
+        padding: 7% 0px 0px 1em;
+        font-size: 1.2em;
+    }
+    .warszawaindex__title{
+        padding: 0.8em 2em 0.8em 0em;
+    }
+    .warszawaindex__ind{
+        padding: 5% 2em 0px 0px;
+    }
+}
+@media screen and (max-width: 330px){
+    .warszawaindex__city{
+        padding: 12% 0px 0px 1em;
+        font-size: 1em;
+    }
+    .warszawaindex__title{
+        font-size: 1em;
+        padding: 0.8em 2em 0.8em 0em;
+    }
+    .warszawaindex__ind{
+        font-size: 0.8em;
+        padding: 10% 1em 0px 0px;
+    }
+    .title1,.title2{
+        font-size: 1em;
+        padding: 0px 0px 0px 4em;
+    }
+}
+.footer {
+    height: 15%;
+    background-color: rgba(238, 238, 238, 0.767);
+    box-shadow: 0px -16px 20px 2px rgba(0, 0, 255, 0.2);
+}
+
+.footer__instagram,
+.footer__telegram,
+.footer__signal,
+.footer__twitter{
+    border-radius: 40%;
+    height: 27px;
+    margin-left: 3%;
+}
+.footre__img{
+    margin: 1.5em 0px 0px 40%;
+}
+.footer__text{
+    color: #474646;
+    padding: 1em 0px 0px 41%;
+}
+@media screen and (max-width: 700px){
+    .footre__img{
+        margin: 1em 0px 0px 36%;
+    }
+    .footer__text{
+        padding: 1em 0px 0px 33%;
+    }
+    .footer__instagram,
+    .footer__telegram,
+    .footer__signal,
+    .footer__twitter{
+    height: 24px;
+    margin-left: 3%;
+}
+}
+@media screen and (max-width: 450px){
+    .footre__img{
+        margin: 1em 0px 0px 29%;
+    }
+    .footer__text{
+        font-size: 0.9em;
+        padding: 1em 0px 0px 25%;
+    }
+    .footer__instagram,
+    .footer__telegram,
+    .footer__signal,
+    .footer__twitter{
+    height: 22px;
+    margin-left: 3%;
+}
+}
+@media screen and (max-width: 290px){
+    .footre__img{
+        margin: 1em 0px 0px 25%;
+    }
+    .footer__text{
+        font-size: 0.7em;
+        padding: 1em 0px 0px 21%;
+    }
+    .footer__instagram,
+    .footer__telegram,
+    .footer__signal,
+    .footer__twitter{
+    height: 19px;
+    margin-left: 3%;
+}
+}
